@@ -10,5 +10,7 @@ export const Home = () => {
     {/* Main Content */}
 
     {/* Footer */}
+    chala
     </div>;
+    
 };
