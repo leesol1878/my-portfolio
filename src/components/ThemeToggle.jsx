@@ -12,7 +12,7 @@ export const ThemeToggle = () => {
             setIsDarkMode(true); // Added this line
         } else {
             document.documentElement.classList.remove('dark'); // Fixed this line
-            setIsDarkMode(false);
+            setIsDarkMode(false); // Added this line
         }
     }, []);
 
