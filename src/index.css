@@ -1,7 +1,7 @@
-@import "tailwindcss";
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
 
 @theme{
   --color-border: hsl(var(--border));
@@ -44,7 +44,7 @@ opacity: 1;
 
 
 
-@keyyframes fade-in {
+@keyframes fade-in {
   0% {
     opacity: 0;
     transform: translateY(10px);
@@ -103,7 +103,7 @@ opacity: 1;
     @apply scroll-smooth;
   }
   body{
-    @apply bg-background text-foreground font transition-colors duration-300;
+    @apply bg-background text-foreground transition-colors duration-300;
     line-feature-settings: "rlig" 1, "calt" 1;
   }
 }
